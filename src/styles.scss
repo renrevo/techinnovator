@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import 'scss/utilities/reset';
+@import 'scss/variables';
+
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-primary: #1466e1;
+  --background-color-primary: #ebf3ff;
+}
+
+app-root {
+  font-family: $font-family-text;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header"
+    "main"
+    "footer";
+}

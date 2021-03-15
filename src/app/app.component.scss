@@ -1,1 +1,53 @@
+@import '../scss/variables';
 
+.header {
+  grid-area: header;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: $z-index-fixed;
+  transition: box-shadow 500ms ease 0s;
+  background-color: var(--background-color-primary);
+
+  &__solid {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.24);
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: $padding;
+    padding-bottom: $padding;
+  }
+
+}
+
+.content-container {
+  padding-left: $padding * 2;
+  padding-right: $padding * 2;
+}
+
+.brand {
+  font-family: $font-family-heading;
+  font-size: $t2;
+  font-weight: $font-weight-bold;
+
+  a {
+    padding-top: $padding;
+    padding-bottom: $padding;
+    color: var(--color-black);
+
+    span {
+      color: var(--color-primary);
+    }
+
+  }
+
+}
+
+.main {
+  position: relative;
+  grid-area: main;
+}

@@ -2,7 +2,25 @@
   <div class="content-container">
     <div class="header__content">
       <div class="brand"><a routerLink=""><span>Tech</span>Innovators</a></div>
-      <!-- <li><a routerLink="programs/school-student">For School Students </a></li> -->
+      <div class="menu">
+        <button class="btn__menu" id="btn__menu" aria-label="Menu"><i class="ri-menu-3-line"></i></button>
+        <div class="overlay hide"></div>
+        <nav class="nav">
+          <div class="nav__close">
+            <button class="btn__close" id="btn__close" aria-label="Close menu"><i class="ri-close-line"></i></button>
+          </div>
+          <ul class="nav__items">
+            <li class="nav__item active"><a routerLink=""><i class="ri-home-line"></i><span>Home</span></a>
+            </li>
+            <li class="nav__item programs"><a><i class="ri-apps-line"></i><span>Programs</span></a>
+              <ul class="programs__items hide">
+                <li class="programs__item"><a routerLink="programs/school-student">For School Students</a></li>
+                <li class="programs__item"><a routerLink="programs/college-student">For College Students</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </div>
 </header>
